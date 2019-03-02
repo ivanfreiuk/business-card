@@ -1,16 +1,83 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-    <meta name="description" content="business card" />
-    <meta charset="utf-8">
-    <title>Title</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/style.css">
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" href="images/favicon.png" type="image/png">
+	<title>Resume</title>
+	<link rel="stylesheet" href="../bootstrap/css/bootstrap.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
+	<div class="container">
+		<!--================ Begin Header =================-->
+		<nav class="main-nav">
+			<div>
+				<ul>
+					<li class="menu-item"><a href="#about">About</a></li>
+					<li class="menu-item"><a href="#skills">Skills</a></li>
+					<li class="menu-item"><a href="#education">Education</a></li>
+					<li class="menu-item"><a href="#experience">Experience</a></li>
+					<li class="menu-item"><a href="#contact">Contact</a></li>
+				</ul>
+			</div>
+		</nav>
+		<!--================ End Header =================-->
+		<!--================ ABOUT ME begin =================-->
+		<div id="about">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4">
+						<div><img style="width: 100%; height: 100%;" src="images/photo.jpg" alt="Bio Pic"></div>
+						<p>Advanced web developer with 2 years of experience in structuring, developing &amp;
+							implementing interactive website with the best use of technology.
+						</p>
+					</div>
+					<div class="col-md-6" class="content-right about">
+						<h3 class="cvitae-section-title">About Me</h3>
+						<p class="info"><span class="field-title">Full Name</span> <span
+								class="field-separator">:</span> <span class="field-value">Ivan Freiuk</span></p>
+						<p class="info"><span class="field-title">Address</span> <span class="field-separator">:</span>
+							<span class="field-value">Medova Pechera Street, Lviv</span></p>
+						<p class="info"><span class="field-title">Zip</span> <span class="field-separator">:</span>
+							<span class="field-value">13251</span></p>
+						<p class="info"><span class="field-title">Phone</span> <span class="field-separator">:</span>
+							<span class="field-value">066-534-42-39</span></p>
+						<p class="info"><span class="field-title">Email</span> <span class="field-separator">:</span>
+							<span class="field-value">frejukivan@gmail.com</span></p>
+					</div>
+					<div class="col-md-2" class="links"><a download="dummy-resume.txt"
+							onclick="Materialize.toast('Resume Download Successfully', 4000, 'rounded')"
+							href="dummy-resume.txt" class="tooltipped" data-position="left" data-delay="50"
+							data-tooltip="Download this Resume"
+							data-tooltip-id="365765b6-0451-deb3-24e8-c039980137a1"><span
+								class="ti-download"></span>Download Resume</a><a href="#" class="tooltipped"
+							data-position="left" data-delay="50" data-tooltip="Email this Resume"
+							data-tooltip-id="517d97c5-7852-0829-a325-68a90f10a131"><span class="ti-email"></span>Email
+							this Resume</a><a href="#" class="tooltipped" data-position="left" data-delay="50"
+							data-tooltip="Fork me on github"
+							data-tooltip-id="01ad8480-9074-fd26-b1ad-b5e0384e1e20"><span
+								class="ti-github"></span>Github</a><a href="#" class="tooltipped" data-position="left"
+							data-delay="50" data-tooltip="Follow on LinkedIn"
+							data-tooltip-id="77b324b1-bee1-9a81-cccc-e7bef31dc6c3"><span
+								class="ti-linkedin"></span>LinkedIn Profile</a><a href="#" class="tooltipped"
+							data-position="left" data-delay="50" data-tooltip="Follow on Twitter"
+							data-tooltip-id="f64e9d6a-3093-8321-f8be-ca6a71f5d80b"><span
+								class="ti-twitter"></span>Twitter Profile</a><a href="#" class="tooltipped"
+							data-position="left" data-delay="50" data-tooltip="Follow on Facebook"
+							data-tooltip-id="06d22adb-8cb0-4b75-4ff4-16f48ddc6ed7"><span
+								class="ti-facebook"></span>Facebook Profile</a></div>
+				</div>
+			</div>
+		</div>
+		<!--================ ABOUT ME end =================-->
+	</div>
 </body>
 
 </html>
