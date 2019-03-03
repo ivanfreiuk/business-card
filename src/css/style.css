@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Lato|Raleway');
 
 body {
-  background-color: #f2f2f2;
+  background-color: #ffffff;
   font-family: "Lato";
   font-weight: 300;
   font-size: 16px; 
@@ -19,6 +19,7 @@ body {
 }
 
 p {
+  color: #818181;
   line-height: 28px;
   margin-bottom: 25px;
 }
@@ -26,13 +27,6 @@ p {
 .centered {
   text-align: center;
 }
-
-/* .wrapper {
-  margin-left: 5%;
-  margin-right: 5%;
-  margin-bottom: 2%;
-  box-shadow: 0 0 10px rgba(0,0,0,0.5);
-} */
 
 hr {
   display: block;
@@ -46,13 +40,16 @@ hr {
 .navbar {
   font-weight: 800;
   font-size: 16px;
-  padding-top: 25px; 
-  padding-bottom: 25px; 
+  /* padding-top: 25px; 
+  padding-bottom: 25px;  */
   width: 100%;
+}
+.navbar > .container-fluid {
+  justify-content: center;
 }
 
 .navbar-light {  
-  background-color:#2b748812;
+  background-color:#edf0f5
 }
 
 .navbar-light .navbar-brand {
@@ -69,15 +66,19 @@ hr {
   overflow: hidden;
   text-transform: uppercase;
 }
+ .navbar .nav-item .nav-link {
+  color: #373c55;
+}
 
 .nav-item:hover {  
   background-color: #00bff312;
   box-shadow: 0 0 10px rgba(0,0,0,0.5);
-  /* box-shadow: 0 0 10px 5px #00bff312 */
 }
 #about {
   margin-top: 20px;
 }
+
+
  #about h1,
  #skills h1,
  #expirience h1,
@@ -88,10 +89,16 @@ hr {
 
  .avatar img {
    width: 100%;
+   margin: 5px 0px 20px;
  }
 
+#about .info span {
+  display: table-cell;
+  position: relative;
+}
+
  .content-block {
-   padding: 3% 1% 3% 1%;
+   padding: 3% 2% 3% 2%;
    margin-top:80px;
    box-shadow: 0 0 3px rgba(0,0,0,0.5);
    border: 1px solid #f2f2f2;
@@ -103,9 +110,95 @@ hr {
     min-height: 250px;
     background-color: #252525;
  }
+
  .footer-content h1 {
   color: whitesmoke;
 }
+
+.form-input input {
+    display: block;
+    width: 100%;
+    height: 50px;
+    -webkit-transition: border-color .5s;
+    -moz-transition: border-color .5s;
+    transition: border-color .5s;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.form-input input:focus {
+  color: #495057;
+  border-color: none;
+  outline: 0;
+}
+
+input[type="text"] {
+  background-color: transparent;
+  border: none;
+}
+
+.signature {
+  margin-left: 10%;
+}
+.row.vdivider [class*='col-']:not(:last-child):after {
+    background: #ccc;
+    width: 1px;
+    content: "";
+    display:block;
+    position: absolute;
+    top:0;
+    bottom: 0;
+    right: 0;
+    min-height: 70px;
+}
+
+.center {
+  display: table;
+  width: 100%;
+}
+#social-box {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  font-size: 30px;
+}
+
+#social-box .social {
+  padding-left: 0px;
+}
+#social-box li {
+  color: #707070;
+  list-style-type: none;
+  display: inline-block;
+  width: 70px;
+  height: 70px;
+  line-height: 70px;
+  padding: 1%;
+  border: 1px solid #707070;
+  cursor: pointer;
+  margin-bottom: 20px;
+  transition: ease .3s;
+}
+#social-box li a {
+  color: inherit;
+  text-decoration: none;
+}
+
+#social-box li:hover {
+  color: #f2f2f2;
+  background-color: #707070;
+  border: 1px solid #707070;
+  box-shadow: 0 0 5px rgba(0,0,0,0.5);
+}
+.social:hover > li {
+  opacity: 0.5;
+}
+.social:hover > li:hover {
+  opacity: 1;
+}
+
+
+
 /* .main-nav {
   background: 0 0;
   box-shadow: none;
