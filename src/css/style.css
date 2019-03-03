@@ -1,4 +1,112 @@
-.main-nav {
+@import url('https://fonts.googleapis.com/css?family=Lato|Raleway');
+
+body {
+  background-color: #f2f2f2;
+  font-family: "Lato";
+  font-weight: 300;
+  font-size: 16px; 
+  color: #555;
+
+  -webkit-font-smoothing: antialiased;
+  -webkit-overflow-scrolling: touch;
+
+  margin-top: 70px;
+}
+
+ h1, h2, h3, h4, h5, h6 {
+  font-family: "Raleway";
+  color: #333;
+}
+
+p {
+  line-height: 28px;
+  margin-bottom: 25px;
+}
+
+.centered {
+  text-align: center;
+}
+
+/* .wrapper {
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 2%;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+} */
+
+hr {
+  display: block;
+  height: 1px;
+  border:0px;
+  border-top: 1px solid #ccc; 
+  margin: 1em 0;
+  padding: 0;
+}
+
+.navbar {
+  font-weight: 800;
+  font-size: 16px;
+  padding-top: 25px; 
+  padding-bottom: 25px; 
+  width: 100%;
+}
+
+.navbar-light {  
+  background-color:#2b748812;
+}
+
+.navbar-light .navbar-brand {
+  font-weight: bolder;
+  font-size: 22px;
+  letter-spacing: 1px;
+}
+
+.nav-item {    
+  display: block;  
+  text-align: center;
+  font-size: 20px;
+  letter-spacing: 2px;
+  overflow: hidden;
+  text-transform: uppercase;
+}
+
+.nav-item:hover {  
+  background-color: #00bff312;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  /* box-shadow: 0 0 10px 5px #00bff312 */
+}
+#about {
+  margin-top: 20px;
+}
+ #about h1,
+ #skills h1,
+ #expirience h1,
+ #education h1,
+ #contact h1 {
+   font-weight: 900;
+ }
+
+ .avatar img {
+   width: 100%;
+ }
+
+ .content-block {
+   padding: 3% 1% 3% 1%;
+   margin-top:80px;
+   box-shadow: 0 0 3px rgba(0,0,0,0.5);
+   border: 1px solid #f2f2f2;
+ }
+
+ .footer-content {
+   margin-top: 50px;
+    padding-top: 80px;
+    min-height: 250px;
+    background-color: #252525;
+ }
+ .footer-content h1 {
+  color: whitesmoke;
+}
+/* .main-nav {
   background: 0 0;
   box-shadow: none;
   display: block;
@@ -54,4 +162,4 @@ ol, ul {
   color: #838383;
   line-height: 70px;
   text-decoration: none;
-}
+} */ 

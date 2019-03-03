@@ -4,80 +4,175 @@
 <head>
 	<!-- Required meta tags -->
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="icon" href="images/favicon.png" type="image/png">
 	<title>Resume</title>
-	<link rel="stylesheet" href="../bootstrap/css/bootstrap.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href=" css/bootstrap.css">
+	<link rel="stylesheet" href="css/fontawesome.css">
 	<link rel="stylesheet" href="css/style.css">
+	<!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous"> -->
 </head>
 
 <body>
+	<!-- =========================== TOPMENU BEG ============================== -->
+	<header>
+		<nav class="navbar navbar-expand-md navbar-light">
+			<div class="container-fluid">
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler"
+					aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<a class="navbar-brand" href="#">RESUME</a>
 
-	<div class="container">
-		<!--================ Begin Header =================-->
-		<nav class="main-nav">
-			<div>
-				<ul>
-					<li class="menu-item"><a href="#about">About</a></li>
-					<li class="menu-item"><a href="#skills">Skills</a></li>
-					<li class="menu-item"><a href="#education">Education</a></li>
-					<li class="menu-item"><a href="#experience">Experience</a></li>
-					<li class="menu-item"><a href="#contact">Contact</a></li>
-				</ul>
+				<div class="collapse navbar-collapse" id="navbarToggler">
+					<hr>
+					<ul class="nav navbar-nav">
+						<li class="nav-item">
+							<a class="nav-link" href="#about">About</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#skills">Skills</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#expirience">Expirience</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#education">Education</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#contact">Contact</a>
+						</li>
+					</ul>
+				</div>
 			</div>
 		</nav>
-		<!--================ End Header =================-->
-		<!--================ ABOUT ME begin =================-->
-		<div id="about">
+	</header>
+	<!-- =========================== TOPMENU END ============================== -->
+	<div class="container">
+		<!-- =========================== ABOUT ME BEG ============================== -->
+		<div id="about" class="content-block">
 			<div class="container">
+				<h1>ABOUT ME</h1>
+				<hr>
+				<div class="row">
+					<div class="col-md-4 avatar">
+						<img src="images/photo.jpg" />
+					</div>
+					<div class="col-md-6">
+						<h2>My Name is Ivan Freiuk, and I am a programmer</h2>
+						<p>Advanced web developer with 2 years of experience in structuring, developing & implementing
+							interactive website with the best use of technology.</p>
+						<ul id="service-icons">
+							<li class="services-design">Design</li>
+							<li class="services-mobile">Mobile</li>
+							<li class="services-film">Film</li>
+							<li class="services-photo">Photo</li>
+						</ul>
+					</div>
+					<div class="col-md-2">
+						<ul class="social">
+							<li><a href="#" class="fa fa-facebook">Facebook</a></li>
+							<li><a href="#" class="fa fa-twitter">Twitter</a></li>
+							<li><a href="#" class="fa fa-github">LinkedIn</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="bottom-divider"></div>
+		</div>
+		<!-- =========================== ABOUT ME END ============================== -->
+		<!-- =========================== SKILLS BEG ============================== -->
+		<div id="skills" class="content-block">
+			<div class="container">
+				<div>
+					<h1>SKILLS</h1>
+				</div>
+				<hr>
+
+			</div>
+		</div>
+		<!-- =========================== SKILLS END ============================== -->
+		<!-- =========================== EXPIRIENCE BEG ============================== -->
+		<div id="expirience" class="content-block">
+			<div class="container">
+				<div>
+					<h1>EXPIRIENCE</h1>
+				</div>
+				<hr>
 				<div class="row">
 					<div class="col-md-4">
-						<div><img style="width: 100%; height: 100%;" src="images/photo.jpg" alt="Bio Pic"></div>
-						<p>Advanced web developer with 2 years of experience in structuring, developing &amp;
-							implementing interactive website with the best use of technology.
-						</p>
+						<h2>Description of Work</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras diam risus, dignissim pharetra
+							sagittis sed, adipiscing nec felis. Maecenas non nulla eget ligula semper aliquet.
+							Pellentesque adipiscing pulvinar tortor, a adipiscing felis commodo in. Vestibulum dui
+							magna, mattis in bibendum a, congue vitae lectus. In eu odio tortor, vel congue lacus. Donec
+							viverra viverra eros, in egestas ligula adipiscing non. Morbi et ultricies sapien. Duis
+							metus odio, commodo in tempor quis, euismod et ligula. Vivamus tristique condimentum </p>
 					</div>
-					<div class="col-md-6" class="content-right about">
-						<h3 class="cvitae-section-title">About Me</h3>
-						<p class="info"><span class="field-title">Full Name</span> <span
-								class="field-separator">:</span> <span class="field-value">Ivan Freiuk</span></p>
-						<p class="info"><span class="field-title">Address</span> <span class="field-separator">:</span>
-							<span class="field-value">Medova Pechera Street, Lviv</span></p>
-						<p class="info"><span class="field-title">Zip</span> <span class="field-separator">:</span>
-							<span class="field-value">13251</span></p>
-						<p class="info"><span class="field-title">Phone</span> <span class="field-separator">:</span>
-							<span class="field-value">066-534-42-39</span></p>
-						<p class="info"><span class="field-title">Email</span> <span class="field-separator">:</span>
-							<span class="field-value">frejukivan@gmail.com</span></p>
+
+					<div class="col-md-4">
+						<h2>Description of Work</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras diam risus, dignissim pharetra
+							sagittis sed, adipiscing nec felis. Maecenas non nulla eget ligula semper aliquet.
+							Pellentesque adipiscing pulvinar tortor, a adipiscing felis commodo in. Vestibulum dui
+							magna, mattis in bibendum a, congue vitae lectus. In eu odio tortor, vel congue lacus. Donec
+							viverra viverra eros, in egestas ligula adipiscing non. Morbi et ultricies sapien. Duis
+							metus odio, commodo in tempor quis, euismod et ligula. Vivamus tristique condimentum </p>
 					</div>
-					<div class="col-md-2" class="links"><a download="dummy-resume.txt"
-							onclick="Materialize.toast('Resume Download Successfully', 4000, 'rounded')"
-							href="dummy-resume.txt" class="tooltipped" data-position="left" data-delay="50"
-							data-tooltip="Download this Resume"
-							data-tooltip-id="365765b6-0451-deb3-24e8-c039980137a1"><span
-								class="ti-download"></span>Download Resume</a><a href="#" class="tooltipped"
-							data-position="left" data-delay="50" data-tooltip="Email this Resume"
-							data-tooltip-id="517d97c5-7852-0829-a325-68a90f10a131"><span class="ti-email"></span>Email
-							this Resume</a><a href="#" class="tooltipped" data-position="left" data-delay="50"
-							data-tooltip="Fork me on github"
-							data-tooltip-id="01ad8480-9074-fd26-b1ad-b5e0384e1e20"><span
-								class="ti-github"></span>Github</a><a href="#" class="tooltipped" data-position="left"
-							data-delay="50" data-tooltip="Follow on LinkedIn"
-							data-tooltip-id="77b324b1-bee1-9a81-cccc-e7bef31dc6c3"><span
-								class="ti-linkedin"></span>LinkedIn Profile</a><a href="#" class="tooltipped"
-							data-position="left" data-delay="50" data-tooltip="Follow on Twitter"
-							data-tooltip-id="f64e9d6a-3093-8321-f8be-ca6a71f5d80b"><span
-								class="ti-twitter"></span>Twitter Profile</a><a href="#" class="tooltipped"
-							data-position="left" data-delay="50" data-tooltip="Follow on Facebook"
-							data-tooltip-id="06d22adb-8cb0-4b75-4ff4-16f48ddc6ed7"><span
-								class="ti-facebook"></span>Facebook Profile</a></div>
+
+					<div class="col-md-4">
+						<h2>Description of Work</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras diam risus, dignissim pharetra
+							sagittis sed, adipiscing nec felis. Maecenas non nulla eget ligula semper aliquet.
+							Pellentesque adipiscing pulvinar tortor, a adipiscing felis commodo in. Vestibulum dui
+							magna, mattis in bibendum a, congue vitae lectus. In eu odio tortor, vel congue lacus. Donec
+							viverra viverra eros, in egestas ligula adipiscing non. Morbi et ultricies sapien. Duis
+							metus odio, commodo in tempor quis, euismod et ligula. Vivamus tristique condimentum </p>
+					</div>
 				</div>
 			</div>
 		</div>
-		<!--================ ABOUT ME end =================-->
+		<!-- =========================== EXPIRIENCE END ============================== -->
+		<!-- =========================== EDUCATION BEG ============================== -->
+		<div id="education" class="content-block">
+			<div class="container">
+				<div class="row centered">
+					<div class="col-md-12">
+						<h1>EDUCATION</h1>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- =========================== EDUCATION END ============================== -->
+		<!-- =========================== CONTACT BEG ============================== -->
+		<div id="contact" class="content-block">
+			<div class="container">
+				<div>
+					<h1>CONTACT</h1>
+				</div>
+				<hr>
+				<div class="row">
+
+				</div>
+			</div>
+		</div>
+		<!-- =========================== CONTACT END ============================== -->
+
 	</div>
+	<footer>
+		<div class="footer-content centered">
+			<h1>FOOTER</h1>
+		</div>
+	</footer>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+		crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+		integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+		crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+		integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+		crossorigin="anonymous"></script>
 </body>
 
 </html>
