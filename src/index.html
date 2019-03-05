@@ -341,8 +341,31 @@
 
 	</div>
 	<footer>
-		<div class="footer-content centered">
-			<h1>FOOTER</h1>
+		<div class="footer-content">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6 offset-md-4 centered">
+						<div class="center">
+							<div id="social-box">
+								<ul class="social">
+									<li><a class="fa fa-facebook" aria-hidden="true"
+											href="https://www.facebook.com/profile.php?id=100017133434529"></a></li>
+									<li><a class="fa fa-instagram" aria-hidden="true"
+											href="https://www.instagram.com/ivanfrejuk/?hl=uk"></a></li>
+									<li><a class="fa fa-github" aria-hidden="true"
+											href="https://github.com/ivanfreiuk"></a></li>
+									<li><i class="fa fa-google" aria-hidden="true"></i></li>
+									<li><i class="fa fa-twitter" aria-hidden="true"></i></li>
+									<li><i class="fa fa-telegram" aria-hidden="true"></i></li>
+								</ul>
+							</div>
+						<div>
+							<p>Created by Freiuk Ivan. 2019</p>
+						</div>						
+					</div>
+					</div>
+				</div>
+			</div>
 		</div>
 	</footer>
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -357,29 +380,7 @@
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
 		integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
 		</script>
-	<script src="js/index.js">
-		$(document).ready(function () {
-			const win = $(window);
-			const doc = $(document);
-			const progressBar = $('progress');
-			const progressLabel = $('.progress-label');
-			const setValue = () => win.scrollTop();
-			const setMax = () => doc.height() - win.height();
-			const setPercent = () => Math.round(win.scrollTop() / (doc.height() - win.height()) * 100);
-
-			progressLabel.text(setPercent() + '%');
-			progressBar.attr({ value: setValue(), max: setMax() });
-
-			doc.on('scroll', () => {
-				progressLabel.text(setPercent() + '%');
-				progressBar.attr({ value: setValue() });
-			});
-
-			win.on('resize', () => {
-				progressLabel.text(setPercent() + '%');
-				progressBar.attr({ value: setValue(), max: setMax() });
-			})
-		});</script>
+	<script src="js/index.js"></script>
 </body>
 
 </html>
