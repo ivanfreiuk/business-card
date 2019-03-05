@@ -44,6 +44,7 @@ hr {
   padding-top: 25px; 
   padding-bottom: 25px; 
   width: 100%;
+  z-index: 1;
 }
 
 .navbar-light {  
@@ -90,24 +91,23 @@ hr {
    margin: 5px 0px 20px;
  }
  
- .content-block .content-right {
-   width: auto;
-   vertical-align: middle;
-   overflow: hidden;
-   padding: 70px 50px;
-   position: relative;
-   z-index: 0;
-  }
-  
-  #about .info span {
-    display: table-cell;
-    position: relative;
-  }
+.content-block .content-right {
+  width: auto;
+  vertical-align: middle;
+  overflow: hidden;
+  padding: 70px 50px;
+  z-index: 0;
+}
 
-  #about .info .field-separator {
-    width: 80px;
-    text-align: center;
-  }
+#about .info span {
+  display: table-cell;
+  position: relative;
+}
+
+#about .info .field-separator {
+  width: 80px;
+  text-align: center;
+}
 #about .info .field-title {
   width: 90px;
 }
@@ -121,22 +121,40 @@ hr {
 }
 
 #about .field-value:after {
-    background: #ccc;
-    bottom: -18px;
-    content: '';
-    display: block;
-    height: 1px;
-    left: 0;
-    position: absolute;
-    width: 100%;
+  background: #ccc;
+  bottom: -18px;
+  content: '';
+  display: block;
+  height: 1px;
+  left: 0;
+  position: absolute;
+  width: 100%;
 }
 
- .content-block {
-   padding: 3% 2% 3% 2%;
-   margin-top:80px;
-   box-shadow: 0 0 3px rgba(0,0,0,0.5);
-   border: 1px solid #f2f2f2;
- }
+#skills .card-header {
+  background-color: rgb(237, 240, 245);
+} 
+#skills .card-header:hover {
+  background-color: #00bff312;
+}
+
+#skills .btn-link:hover {
+  color: #373c55;
+} 
+#skills .btn-link {
+  color:#373c55;
+  font-weight: bold;
+  font-size: 14px;
+  text-decoration: none; 
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.content-block {
+  padding: 3% 2% 3% 2%;
+  margin-top:80px;
+  box-shadow: 0 0 3px rgba(0,0,0,0.5);
+  border: 1px solid #f2f2f2;
+}
 
 #skills .progress-bar {
     background: #707070;
@@ -172,6 +190,20 @@ hr {
   color: whitesmoke;
 }
 
+#contact .form-input .underline {
+  height: 1px;
+  width: 0;
+  display: block;
+  content: '';
+  background: #ababab;
+  position: absolute;
+  border: 0;
+  -webkit-transition: width .3s;
+  -moz-transition: width .3s;
+  transition: width .3s;
+  bottom: 0;
+}
+
 .form-input input {
     display: block;
     width: 100%;
@@ -182,17 +214,45 @@ hr {
     font-size: 14px;
     font-weight: 400;
 }
+ 
+.form-input input {
+  border: 0;
+  border-bottom: 1px solid #f2f2f2;
+  box-shadow: none;
+  background-color: transparent;
+}
+
+.form-textarea textarea {
+  border: 0;
+  border-bottom: 1px solid #f2f2f2;
+  box-shadow: none;
+}
+
+#contact .form-textarea textarea {
+  height: 190px;
+  display: block;
+  padding: 15px 0;
+  font-size: 14px;
+  width: 100%;
+  resize: none;
+  -webkit-transition: border-color .5s;
+  -moz-transition: border-color .5s;
+  transition: border-color .5s;
+}
+#contact .form-input textarea:focus {
+  color: #495057;
+  border-bottom-color: rgb(0, 255, 242);
+  outline: 0;
+}
 
 .form-input input:focus {
   color: #495057;
   border-color: none;
+  border-bottom-color: rgb(0, 255, 242);
   outline: 0;
 }
 
-input[type="text"] {
-  background-color: transparent;
-  border: none;
-}
+
 
 .signature {
   margin-left: 10%;
@@ -253,6 +313,14 @@ input[type="text"] {
   opacity: 1;
 }
 
+/* COMMON */
+.cvitae-section-content .content-left, .cvitae-section-content .content-right {
+  display: table-cell;
+  overflow: hidden;
+  padding: 70px 50px;
+  position: relative;
+  z-index: 0;
+};
 
 
 /* .main-nav {
