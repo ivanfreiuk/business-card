@@ -19,6 +19,11 @@
 <body>
 	<!-- ====================== TOPMENU BEG ====================== -->
 	<header>
+		<progress value="0" id="progressBar">
+			<div class="progress-container">
+				<span class="progress-bar"></span>
+			</div>
+		</progress>
 		<nav class="navbar navbar-expand-md navbar-light">
 			<div class="container-fluid">
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler"
@@ -43,6 +48,10 @@
 				</div>
 			</div>
 		</nav>
+		<div class="progress-wrapper">
+			<div class="progress-label"></div>
+			<progress></progress>
+		</div>
 	</header>
 	<!-- ================== TOPMENU END ===================== -->
 	<div class="container">
@@ -345,6 +354,32 @@
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
 		integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
 		crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+		integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+		</script>
+	<script src="js/index.js">
+		$(document).ready(function () {
+			const win = $(window);
+			const doc = $(document);
+			const progressBar = $('progress');
+			const progressLabel = $('.progress-label');
+			const setValue = () => win.scrollTop();
+			const setMax = () => doc.height() - win.height();
+			const setPercent = () => Math.round(win.scrollTop() / (doc.height() - win.height()) * 100);
+
+			progressLabel.text(setPercent() + '%');
+			progressBar.attr({ value: setValue(), max: setMax() });
+
+			doc.on('scroll', () => {
+				progressLabel.text(setPercent() + '%');
+				progressBar.attr({ value: setValue() });
+			});
+
+			win.on('resize', () => {
+				progressLabel.text(setPercent() + '%');
+				progressBar.attr({ value: setValue(), max: setMax() });
+			})
+		});</script>
 </body>
 
 </html>

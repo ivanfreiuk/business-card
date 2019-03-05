@@ -9,7 +9,7 @@ body {
 
   -webkit-font-smoothing: antialiased;
   -webkit-overflow-scrolling: touch;
-
+  width: 100%;
   margin-top: 70px;
 }
 
@@ -182,7 +182,7 @@ hr {
  .footer-content {
    margin-top: 50px;
     padding-top: 80px;
-    min-height: 250px;
+    min-height: 200px;
     background-color: #252525;
  }
 
@@ -271,6 +271,7 @@ hr {
 
 .center {
   width: 100%;
+  margin-left: -12px;
 }
 #social-box {
   display: flex;
@@ -321,62 +322,88 @@ hr {
   position: relative;
   z-index: 0;
 };
+/*pregress*/
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,700);
 
-
-/* .main-nav {
-  background: 0 0;
-  box-shadow: none;
-  display: block;
-  height: 91px;
-  overflow: hidden;
-  top: -150px;
-  -webkit-transition: height .3s,top .3s;
-  -moz-transition: height .3s,top .3s;
-  transition: height .3s,top .3s;
+*, *::after, *::before {
+  box-sizing: border-box;
 }
 
+progress {
+  /* Positioning */
+  position: fixed;
+  left: 0;
+  top: 0;
 
-
-.main-nav ul {
-  border-collapse: collapse;
-  display: table;
-  height: 200px;
-  table-layout: fixed;
+  /* Dimensions */
   width: 100%;
-  background-color:#2b748812;
-}
+  height: .25em;
 
-nav ul {
-  margin: 0;
- }
+  /* Reset the apperance */  
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
 
-ol, ul {
-  list-style: none;
-}
-
-.main-nav ul li {
-  display: table-cell;
-  float: none;
-  font-weight: 700;
-  letter-spacing: 2px;
-  overflow: hidden;
-  padding: 0;
-  position: relative;
-  text-align: center;
-  text-transform: uppercase;
-  width: 20%;
-  z-index: 0;
+  /* Get rid of the default border in Firefox/Opera. */
   border: none;
-  box-shadow: 1px 0 0 0 #f2f2f2 inset, 0 1px 0 0 #f2f2f2 inset, 0 -1px 0 0 #f2f2f2 inset;
+
+  /* For Firefox/IE10+ */
+  background-color: transparent;
+
+  /* For IE10+, color of the progress bar */
+  color: red;
+  z-index: 2;
 }
 
-.main-nav ul li:hover {
-  background-color: #00bff312;
-  border-bottom: 3px solid red;
+progress::-webkit-progress-bar {
+  background-color: transparent;
 }
 
-.main-nav ul li a {
-  color: #838383;
-  line-height: 70px;
-  text-decoration: none;
-} */ 
+.flat::-webkit-progress-value {
+  background-color: red;
+}
+
+.flat::-moz-progress-bar {
+  background-color: red;
+}
+
+.single::-webkit-progress-value {
+  background-color: transparent;
+  background-image: -webkit-linear-gradient(left, transparent, red);
+}
+
+.single::-moz-progress-bar {
+  background-color: transparent;
+  background-image: -moz-linear-gradient(left, transparent, red);
+}
+
+.multiple::-webkit-progress-value {
+  background-image: -webkit-linear-gradient(-45deg, 
+                               transparent 33%, rgba(0, 0, 0, .1) 33%, 
+                               rgba(0,0, 0, .1) 66%, transparent 66%),
+                      -webkit-linear-gradient(left, green, red);
+}
+
+.multiple::-moz-progress-bar {
+  background-image: -moz-linear-gradient(-45deg, 
+                               transparent 33%, rgba(0, 0, 0, .1) 33%, 
+                               rgba(0,0, 0, .1) 66%, transparent 66%),
+                      -moz-linear-gradient(left, green, red);
+}
+
+.progress-container {
+  width: 100%;
+  background-color: transparent;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: .25em;
+  display: block;
+}
+
+.progress-bar {
+  background-color: red;
+  width: 50%;
+  display: block;
+  height: inherit;
+}
