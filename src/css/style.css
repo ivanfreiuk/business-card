@@ -16,6 +16,7 @@ body {
  h1, h2, h3, h4, h5, h6 {
   font-family: "Raleway";
   color: #333;
+  font-weight: bold;
 }
 
 p {
@@ -40,12 +41,9 @@ hr {
 .navbar {
   font-weight: 800;
   font-size: 16px;
-  /* padding-top: 25px; 
-  padding-bottom: 25px;  */
+  padding-top: 25px; 
+  padding-bottom: 25px; 
   width: 100%;
-}
-.navbar > .container-fluid {
-  justify-content: center;
 }
 
 .navbar-light {  
@@ -91,10 +89,46 @@ hr {
    width: 100%;
    margin: 5px 0px 20px;
  }
+ 
+ .content-block .content-right {
+   width: auto;
+   vertical-align: middle;
+   overflow: hidden;
+   padding: 70px 50px;
+   position: relative;
+   z-index: 0;
+  }
+  
+  #about .info span {
+    display: table-cell;
+    position: relative;
+  }
 
-#about .info span {
-  display: table-cell;
+  #about .info .field-separator {
+    width: 80px;
+    text-align: center;
+  }
+#about .info .field-title {
+  width: 90px;
+}
+#about .info {
+  display: table;
+  font-size: 15px;
+  margin-bottom: 30px;
   position: relative;
+  table-layout: fixed;
+  width: 100%;
+}
+
+#about .field-value:after {
+    background: #ccc;
+    bottom: -18px;
+    content: '';
+    display: block;
+    height: 1px;
+    left: 0;
+    position: absolute;
+    width: 100%;
 }
 
  .content-block {
@@ -103,6 +137,29 @@ hr {
    box-shadow: 0 0 3px rgba(0,0,0,0.5);
    border: 1px solid #f2f2f2;
  }
+
+#skills .progress-bar {
+    background: #707070;
+    border-radius: 25px 0 50px 25px;
+}
+
+#skills .progress {
+  border-radius: 25px 0 50px 25px;
+}
+
+#skills .progress-title {
+    color: #747474;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-top:20px;
+}
+
+.progress-bar-container {
+  display: table;
+  width: 100%;
+}
 
  .footer-content {
    margin-top: 50px;
@@ -153,11 +210,10 @@ input[type="text"] {
 }
 
 .center {
-  display: table;
   width: 100%;
 }
 #social-box {
-  display: table-cell;
+  display: flex;
   vertical-align: middle;
   text-align: center;
   font-size: 30px;
@@ -176,7 +232,7 @@ input[type="text"] {
   padding: 1%;
   border: 1px solid #707070;
   cursor: pointer;
-  margin-bottom: 20px;
+  margin-top: 20px;
   transition: ease .3s;
 }
 #social-box li a {
